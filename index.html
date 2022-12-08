@@ -2,34 +2,248 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ремонт ноутбуков</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Аренда премиальных автомобилей</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1 class="title">Ремонт <span>ноутбуков</span></h1>
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list list-reset">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#cars" class="nav__link">Автомобили</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#price" class="nav__link">Бронирование авто</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="main">
-    <div class="main-info">
-        <h2>Почему лучше обратиться именно к нам?</h2>
-        <ul>
-            <li>Бесплатная диагностика поломки прямо при клиенте</li>
-            <li>Молниеносная скорость починки (от 20 минут до 2 рабочих дней)</li>
-            <li>Больше 10 лет на рынке – починили более 2500 ноутбуков</li>
-        </ul>
-        <a href="#">Посмотреть кейсы</a>
-    </div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Аренда премиальных автомобилей</h1>
+                <p class="hero__descr">
+                    В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно распространенных серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать за рулем настоящей легенды и узнать, на что она способна за пределами гоночной трассы!
+                </p>
+                <button class="hero__btn btn btn-reset">Посмотреть автомобили</button>
+            </div>
+        </section>
 
-    <img src="image2.png" alt="">
-</div>
+        <section class="cards" id="cards">
+            <div class="container">
+                <h2 class="sub-title">Наш автопарк</h2>
+                <ul class="cards__list list-reset">
+                    <li class="card__item">
+                        <img src="img/car/1.png" alt="car" class="card__img">
+                        <h3 class="card__title">Lamborghini Huracan Spyder</h3>
+                        <ul class="car-info list-reset">
+                            <li class="car-info__item">
+                                <img src="img/transmission.png" alt="Transmission" class="car-info__icon">
+                                <p class="car-info__descr">Коробка <span>автомат</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/wheel.svg" alt="Wheel" class="car-info__icon">
+                                <p class="car-info__descr">Двигатель <span>5.2 л.с.</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/year.png" alt="Year" class="car-info__icon">
+                                <p class="car-info__descr">Год выпуска <span>2019</span></p>
+                            </li>
+                        </ul>
+                        <button class="card__btn btn-reset btn">Зaбронировать</button>
+                    </li>
+                    <li class="card__item">
+                        <img src="img/car/2.png" alt="car" class="card__img">
+                        <h3 class="card__title">Chevrolet Corvette</h3>
+                        <ul class="car-info list-reset">
+                            <li class="car-info__item">
+                                <img src="img/transmission.png" alt="Transmission" class="car-info__icon">
+                                <p class="car-info__descr">Коробка <span>автомат</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/wheel.svg" alt="wheel" class="car-info__icon">
+                                <p class="car-info__descr">Двигатель <span>6.2 л.с.</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/year.png" alt="Year" class="car-info__icon">
+                                <p class="car-info__descr">Год выпуска <span>2017</span></p>
+                            </li>
+                        </ul>
+                        <button class="card__btn btn-reset btn">Зaбронировать</button>
+                    </li>
+                    <li class="card__item">
+                        <img src="img/car/3.png" alt="car" class="card__img">
+                        <h3 class="card__title">Ferrari California</h3>
+                        <ul class="car-info list-reset">
+                            <li class="car-info__item">
+                                <img src="img/transmission.png" alt="Transmission" class="car-info__icon">
+                                <p class="car-info__descr">Коробка <span>автомат</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/wheel.svg" alt="wheel" class="car-info__icon">
+                                <p class="car-info__descr">Двигатель <span>3.9 л.с.</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/year.png" alt="Year" class="car-info__icon">
+                                <p class="car-info__descr">Год выпуска <span>2010</span></p>
+                            </li>
+                        </ul>
+                        <button class="card__btn btn-reset btn">Зaбронировать</button>
+                    </li>
+                    <li class="card__item">
+                        <img src="img/car/4.png" alt="car" class="card__img">
+                        <h3 class="card__title">Lamborghini Urus</h3>
+                        <ul class="car-info list-reset">
+                            <li class="car-info__item">
+                                <img src="img/transmission.png" alt="Transmission" class="car-info__icon">
+                                <p class="car-info__descr">Коробка <span>автомат</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/wheel.svg" alt="wheel" class="car-info__icon">
+                                <p class="car-info__descr">Двигатель <span>4.0 л.с.</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/year.png" alt="Year" class="car-info__icon">
+                                <p class="car-info__descr">Год выпуска <span>2019</span></p>
+                            </li>
+                        </ul>
+                        <button class="card__btn btn-reset btn">Зaбронировать</button>
+                    </li>
+                    <li class="card__item">
+                        <img src="img/car/5.png" alt="car" class="card__img">
+                        <h3 class="card__title">Audi R8</h3>
+                        <ul class="car-info list-reset">
+                            <li class="car-info__item">
+                                <img src="img/transmission.png" alt="transmission" class="car-info__icon">
+                                <p class="car-info__descr">Коробка <span>автомат</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/wheel.svg" alt="wheel" class="car-info__icon">
+                                <p class="car-info__descr">Двигатель <span>5.2 л.с.</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/year.png" alt="year" class="car-info__icon">
+                                <p class="car-info__descr">Год выпуска <span>2018</span></p>
+                            </li>
+                        </ul>
+                        <button class="card__btn btn-reset btn">Зaбронировать</button>
+                    </li>
+                    <li class="card__item">
+                        <img src="img/car/6.png" alt="car" class="card__img">
+                        <h3 class="card__title">Chevrolet Camaro</h3>
+                        <ul class="car-info list-reset">
+                            <li class="car-info__item">
+                                <img src="img/transmission.png" alt="transmission" class="car-info__icon">
+                                <p class="car-info__descr">Коробка <span>автомат</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/wheel.svg" alt="wheel" class="car-info__icon">
+                                <p class="car-info__descr">Двигатель <span>2.0 л.с.</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/year.png" alt="year" class="car-info__icon">
+                                <p class="car-info__descr">Год выпуска <span>2019</span></p>
+                            </li>
+                        </ul>
+                        <button class="card__btn btn-reset btn">Зaбронировать</button>
+                    </li>
+                    <li class="card__item">
+                        <img src="img/car/7.png" alt="car" class="card__img">
+                        <h3 class="card__title">Maserati Quattroporte</h3>
+                        <ul class="car-info list-reset">
+                            <li class="car-info__item">
+                                <img src="img/transmission.png" alt="transmission" class="car-info__icon">
+                                <p class="car-info__descr">Коробка <span>автомат</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/wheel.svg" alt="wheel" class="car-info__icon">
+                                <p class="car-info__descr">Двигатель <span>3.0 л.с.</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/year.png" alt="year" class="car-info__icon">
+                                <p class="car-info__descr">Год выпуска <span>2018</span></p>
+                            </li>
+                        </ul>
+                        <button class="card__btn btn-reset btn">Зaбронировать</button>
+                    </li>
+                    <li class="card__item">
+                        <img src="img/car/8.png" alt="car" class="card__img">
+                        <h3 class="card__title">Dodge Challenger</h3>
+                        <ul class="car-info list-reset">
+                            <li class="car-info__item">
+                                <img src="img/transmission.png" alt="transmission" class="car-info__icon">
+                                <p class="car-info__descr">Коробка <span>автомат</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/wheel.svg" alt="wheel" class="car-info__icon">
+                                <p class="car-info__descr">Двигатель <span>6.4 л.с.</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/year.png" alt="year" class="car-info__icon">
+                                <p class="car-info__descr">Год выпуска <span>2019</span></p>
+                            </li>
+                        </ul>
+                        <button class="card__btn btn-reset btn">Зaбронировать</button>
+                    </li>
+                    <li class="card__item">
+                        <img src="img/car/9.png" alt="car" class="card__img">
+                        <h3 class="card__title">Nissan GT-R</h3>
+                        <ul class="car-info list-reset">
+                            <li class="car-info__item">
+                                <img src="img/transmission.png" alt="transmission" class="car-info__icon">
+                                <p class="car-info__descr">Коробка <span>автомат</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/wheel.svg" alt="wheel" class="car-info__icon">
+                                <p class="car-info__descr">Двигатель <span>3.8 л.с.</span></p>
+                            </li>
+                            <li class="car-info__item">
+                                <img src="img/year.png" alt="year" class="car-info__icon">
+                                <p class="car-info__descr">Год выпуска <span>2019</span></p>
+                            </li>
+                        </ul>
+                        <button class="card__btn btn-reset btn">Зaбронировать</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-<div class="form">
-    <h2>Прайс наших услуг</h2>
-    <input type="text" placeholder="Ваше имя">
-    <input type="text" placeholder="Ваш телефон">
-    <input type="text" placeholder="Ваш E-mail">
-    <button>Отправить запрос</button>
-</div>
+        <section class="price" id="price">
+            <div class="container price__container">
+                <h2 class="sub-title price__title">Узнать цену и забронировать</h2>
+                <p class="price__descr">
+                    Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования
+                </p>
+                <form class="price__form">
+                    <input type="text" class="price__input" placeholder="Ваше имя">
+                    <input type="text" class="price__input" placeholder="Ваш телефон">
+                    <input type="text" class="price__input" placeholder="Автомобиль, который вас интересует">
+                    <button class="price__btn btn-reset btn">Узнать цену</button>
+                </form>
+                <img src="img/rolls.jpg" alt="rolls" class="price__img">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div class="rights">Все права защищены</div>
+        </div>
+    </footer>
 
 </body>
 </html>
