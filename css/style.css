@@ -215,6 +215,13 @@ body {
     font-weight: 400;
 }
 
+.card__img:hover {
+    transform: scale(1.1);
+}
+.card__img {
+    transition: all .3s;
+}
+
 /* price */
 
 .price {
